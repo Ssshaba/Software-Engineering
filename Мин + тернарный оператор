@@ -1,0 +1,18 @@
+using System;
+
+namespace Мин___тернарный_оператор
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a, b, c;
+            int minn;
+            a = Convert.ToInt32(Console.ReadLine());
+            b = Convert.ToInt32(Console.ReadLine());
+            c = Convert.ToInt32(Console.ReadLine());
+            minn = (a > b && c > b) ? b : Math.Min(a, c);
+            Console.WriteLine(minn);
+        }
+    }
+}
